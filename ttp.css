@@ -1,0 +1,121 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "adobe-clean", sans-serif;
+    box-sizing: border-box;
+}
+#wrapper{
+    position: relative;
+    width: 90%;
+    margin: 2%;
+}
+#triphead{
+    color: tomato;
+    text-align: center;
+    font-size: 30px;
+}
+#completed{
+    text-align: center;
+    color: tomato;
+    font-size: 25px;
+}
+#input{
+    text-align: center;
+    font-size: 22px;
+}
+#im{
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+}
+@media (min-width: 681px ){
+    #h-1{
+        font-size: 55px;
+        color: 	#303030;
+        font-weight: bolder;
+        margin:3% 20% 10% 38%;
+    }
+    #h-1{
+        line-height: 0.5;
+        text-align: center;
+        display: inline-block;
+        position: relative;  
+    }
+    #h-1:before,
+    #h-1:after {
+        content: "";
+        position: absolute;
+        height: 5px;
+        border-bottom: 1px solid black;
+        border-top: 1px solid blacks;
+        top: 0;
+        width: 200px;
+    }
+    #h-1:before {
+        right: 100%;
+        margin-right: 15px;
+    }
+    #h-1:after {
+        left: 100%;
+        margin-left: 15px;
+    }
+    #back{
+        font-size: 30px;
+        align-self: center;
+        color:#707070;
+    }
+    #backwrapper{
+        position: absolute;
+        left: 45%;
+        top:18%;
+        margin: 0px;
+        display:flex;
+        align-items: center;
+    }
+    #bimage{
+        width: 45px;
+        height: 45px;
+        align-self: center;
+    }
+    .card{
+        border-radius: 10px;
+        box-shadow: 7px 7px rgba(0, 0, 0, 0.1);
+        border: 1px #ff1e56 solid;
+        height: 350px;
+        width: 350px;  
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    
+}
+@media (min-width: 320px) and (max-width: 680px){
+    #back{
+        display: none;
+    }
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row-reverse;
+    }
+    #bimage{
+        width: 60px;
+        height: 60px;
+    }
+    #h-1{
+        font-size: 40px;
+    }
+    .card{
+        border-radius: 10px;
+        box-shadow: 7px 7px rgba(0, 0, 0, 0.1);
+        border: 1px #ff1e56 solid;
+        height: 60%;
+        width: 80%;  
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+}
